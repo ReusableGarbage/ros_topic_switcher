@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="topics" value="publish"/>
+
+    <node pkg="switcher" type="publisher.py" name="smart_publisher"/> 
+
+    <node pkg="switcher" type="smartphone1.py" name="smartphone1"/> 
+
+    <node pkg="switcher" type="smartphone2.py" name="smartphone2"/>
+
+    <node pkg="switcher" type="switcher.py" name="switcher"/>  
+
+</launch>
